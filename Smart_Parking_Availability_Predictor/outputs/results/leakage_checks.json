@@ -1,0 +1,47 @@
+[
+  {
+    "check": "Test days come strictly after training days",
+    "ok": true,
+    "detail": "training ends 2026-03-13 23:00:00, test starts 2026-03-14 00:00:00"
+  },
+  {
+    "check": "No row appears in both training and test data",
+    "ok": true,
+    "detail": "0 shared rows"
+  },
+  {
+    "check": "Training + test rows = all rows",
+    "ok": true,
+    "detail": "6,912 + 1,728 = 8,640"
+  },
+  {
+    "check": "No duplicate readings (one row per lot and hour)",
+    "ok": true,
+    "detail": "checked on the full dataset"
+  },
+  {
+    "check": "Answer columns are not used as inputs",
+    "ok": true,
+    "detail": "occupied_spaces, available_spaces and occupancy_rate are excluded"
+  },
+  {
+    "check": "The raw timestamp is not used as an input",
+    "ok": true,
+    "detail": "only hour/weekday features derived from it are used"
+  },
+  {
+    "check": "Every test lot also appears in training",
+    "ok": true,
+    "detail": "unseen lots: none"
+  },
+  {
+    "check": "No input is a near-copy of the target",
+    "ok": true,
+    "detail": "largest |correlation| with the target is below 0.99"
+  },
+  {
+    "check": "Test share matches the setting",
+    "ok": true,
+    "detail": "20.0% of rows (setting: 20%)"
+  }
+]

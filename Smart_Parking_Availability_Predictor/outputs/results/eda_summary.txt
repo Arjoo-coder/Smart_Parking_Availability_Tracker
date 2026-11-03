@@ -1,0 +1,39 @@
+EDA SUMMARY  (SIMULATED DATA - not real parking measurements)
+================================================================
+Rows: 8,640    Columns: 18
+Time range: 2026-01-01 00:00:00  ->  2026-03-31 23:00:00
+Parking lots: 4
+Missing values left: 0
+
+Average occupancy per lot (%):
+                       mean  min    max
+location                               
+Central Hospital       44.3  7.6   96.8
+City Center Mall       29.6  0.0  100.0
+Downtown Office Plaza  28.7  0.0  100.0
+Railway Station        41.9  0.0  100.0
+
+Busiest hour (highest average occupancy) per lot:
+  Downtown Office Plaza: 13:00  (70.0%)
+  City Center Mall: 17:00  (69.8%)
+  Central Hospital: 11:00  (78.8%)
+  Railway Station: 12:00  (73.5%)
+
+Weekday vs weekend average occupancy (%):
+is_weekend             weekday  weekend
+location                               
+Central Hospital          47.5     36.5
+City Center Mall          24.5     42.1
+Downtown Office Plaza     36.3     10.0
+Railway Station           51.6     18.0
+
+Numeric column statistics:
+       total_spaces  occupied_spaces  available_spaces  occupancy_pct
+count       8640.00          8640.00           8640.00        8640.00
+mean         312.50           107.14            205.36          36.12
+std          113.89            92.77            128.16          28.32
+min          200.00             0.00              0.00           0.00
+25%          237.50            37.00            122.00          13.00
+50%          275.00            77.00            181.00          28.00
+75%          350.00           165.00            272.00          56.00
+max          500.00           500.00            500.00         100.00

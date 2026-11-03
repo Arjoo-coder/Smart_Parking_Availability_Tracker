@@ -1,0 +1,39 @@
+{
+  "method": "Absolute error in spaces of out-of-fold forecasts on TRAINING data (time-series cross-validation). p80 = 80% of forecasts were this close or closer.",
+  "lots": {
+    "LOT_A": {
+      "mae_spaces": 14.93,
+      "p50_spaces": 12.62,
+      "p80_spaces": 23.39,
+      "p90_spaces": 31.26,
+      "n_predictions": 1440
+    },
+    "LOT_B": {
+      "mae_spaces": 25.45,
+      "p50_spaces": 21.92,
+      "p80_spaces": 40.26,
+      "p90_spaces": 52.27,
+      "n_predictions": 1440
+    },
+    "LOT_C": {
+      "mae_spaces": 14.2,
+      "p50_spaces": 11.79,
+      "p80_spaces": 22.11,
+      "p90_spaces": 28.96,
+      "n_predictions": 1440
+    },
+    "LOT_D": {
+      "mae_spaces": 10.19,
+      "p50_spaces": 8.48,
+      "p80_spaces": 16.25,
+      "p90_spaces": 21.62,
+      "n_predictions": 1440
+    }
+  },
+  "share_of_test_errors_within_p80": {
+    "LOT_A": 0.745,
+    "LOT_B": 0.84,
+    "LOT_C": 0.833,
+    "LOT_D": 0.718
+  }
+}

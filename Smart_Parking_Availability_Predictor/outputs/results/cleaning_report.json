@@ -1,0 +1,10 @@
+{
+  "rows_before_cleaning": 8670,
+  "rows_dropped_bad_timestamp": 0,
+  "duplicate_rows_removed": 30,
+  "missing_weather_filled": 86,
+  "rows_dropped_missing_core_values": 0,
+  "rows_dropped_invalid_occupancy": 0,
+  "available_spaces_corrected": 0,
+  "rows_after_cleaning": 8640
+}

@@ -1,0 +1,74 @@
+{
+  "data_is_simulated": true,
+  "data_source_file": "parking_data_simulated.csv",
+  "dataset_fingerprint": {
+    "rows": 8640,
+    "first_timestamp": "2026-01-01 00:00:00",
+    "last_timestamp": "2026-03-31 23:00:00",
+    "lots": [
+      "LOT_A",
+      "LOT_B",
+      "LOT_C",
+      "LOT_D"
+    ],
+    "sum_occupied_spaces": 925689,
+    "sum_total_spaces": 2700000
+  },
+  "best_model": "Gradient Boosting",
+  "selection_rule": "lowest time-series cross-validation RMSE on the training data (the test days are not used to choose a model)",
+  "best_model_by_test_rmse": "Gradient Boosting",
+  "target": "occupancy_rate",
+  "features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "special_event",
+    "is_rush_hour",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "parking_lot_id",
+    "weather"
+  ],
+  "tuning": {
+    "enabled": true,
+    "best_params": {
+      "Decision Tree": {
+        "max_depth": 12,
+        "min_samples_leaf": 5
+      },
+      "Random Forest": {
+        "max_depth": 14,
+        "min_samples_leaf": 3
+      },
+      "Gradient Boosting": {
+        "learning_rate": 0.1,
+        "max_depth": 4
+      }
+    }
+  },
+  "leakage_checks_passed": true,
+  "split": {
+    "type": "time-based",
+    "train_end": "2026-03-13 23:00:00",
+    "test_start": "2026-03-14 00:00:00",
+    "test_end": "2026-03-31 23:00:00",
+    "train_rows": 6912,
+    "test_rows": 1728
+  },
+  "test_metrics": {
+    "test_mae": 0.0544,
+    "test_rmse": 0.068,
+    "test_r2": 0.9425,
+    "test_mae_spaces": 16.5541
+  },
+  "cv_rmse_on_training_data": 0.0655,
+  "library_versions": {
+    "python": "3.13.18",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3"
+  },
+  "trained_at": "2026-10-29T16:25:21"
+}

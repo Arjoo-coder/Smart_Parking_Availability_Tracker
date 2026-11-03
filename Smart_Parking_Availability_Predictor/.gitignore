@@ -1,0 +1,28 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary / local files
+*.log
+*.tmp
+*.bak
+.coverage
+htmlcov/
+.streamlit/secrets.toml
+
+# Your own genuine data (not for sharing)
+data/raw/parking_data_supplied.csv
+data/raw/lot_distances.csv

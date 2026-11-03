@@ -1,0 +1,22 @@
+WHY THESE METRICS?
+------------------
+We predict a number (how full a lot is), so we use regression metrics.
+
+MAE  - Mean Absolute Error
+       The average size of the mistakes, ignoring direction.
+       Easy to understand: MAE = 0.05 means "off by 5 percentage points on average".
+       We also report it in parking spaces, which is the unit drivers care about.
+
+RMSE - Root Mean Squared Error
+       Like MAE, but big mistakes are punished more. In parking a big miss
+       (saying "plenty of space" when the lot is full) is worse than several
+       small misses, so RMSE is a useful stricter check. RMSE >= MAE always;
+       a large gap between them means there are some big outlier errors.
+
+R2   - R-squared (coefficient of determination)
+       How much of the up-and-down movement of occupancy the model explains.
+       1.0 = perfect, 0.0 = no better than always predicting the average,
+       below 0 = worse than that. It allows comparing models on one scale.
+
+All metrics are measured on TEST data the model has never seen (the most
+recent days), because scores on training data would be too optimistic.
